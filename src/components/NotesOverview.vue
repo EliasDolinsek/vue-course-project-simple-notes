@@ -14,7 +14,7 @@ const handleClick = (id) => {
 }
 
 const addNewNote = () => {
-  const id = notesStore.addNewNote('New Note', 'Still emtpy :)')
+  const id = notesStore.addNote('New Note', '')
   router.push({
     name: 'notes/edit',
     params: { id }
@@ -26,7 +26,7 @@ const addNewNote = () => {
   <button type="button" class="btn btn-outline-primary w-100" @click="addNewNote">CREATE NOTE</button>
   <div class="list-group mt-3">
     <div
-      v-for="note in notesStore.getNotesSortedByUpdatedAt()"
+      v-for="note in notesStore.getNotesSortedByUpdatedAt"
       :key="note.id"
       @click="handleClick(note.id)"
       class="list-group-item list-group-item-action flex-column align-items-start"
