@@ -18,12 +18,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <!--TODO: 2. Ersetze div durch router-link-->
-            <div class="nav-link">Home</div>
+            <router-link :to="{ name: 'home' }" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
-            <!--TODO: 3. Ersetze div durch router-link-->
-            <div class="nav-link">Notes</div>
+            <router-link :to="{ name: 'notes' }" class="nav-link">Notes</router-link>
           </li>
         </ul>
       </div>
