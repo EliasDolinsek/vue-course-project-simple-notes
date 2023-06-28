@@ -8,7 +8,6 @@ import TheNavbar from './components/TheNavbar.vue'
 </template>
 
 <style>
-/* TODO: 4. Entferne .todo-box */
 .todo-box {
   background-color: green;
   text-align: center;
