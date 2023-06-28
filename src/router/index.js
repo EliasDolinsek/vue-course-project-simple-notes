@@ -14,15 +14,8 @@ const router = createRouter({
     {
       path: '/notes',
       name: 'notes',
-      component: NotesView,
+      component: NotesView
       // TODO: 1. Erstelle einen Nested-Route für das bearbeiten einer Notiz
-      children: [
-        {
-          path: ':id',
-          name: 'notes/edit',
-          component: NotesEditView
-        }
-      ]
     }
   ]
 })
