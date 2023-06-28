@@ -5,12 +5,12 @@ import { useNotesStore } from '../store/notes'
 const notesStore = useNotesStore()
 
 const handleClick = (id) => {
-  // TODO: 2. Navigiere zum NotesEditView mit der richtigen ID
+  // TODO: 3. Navigiere zum NotesEditView mit der richtigen ID
 }
 
 const addNewNote = () => {
   const id = notesStore.addNote('New Note', '')
-  // TODO: 3. Navigiere zum NotesEditView mit der richtigen ID
+  // TODO: 4. Navigiere zum NotesEditView mit der richtigen ID
 }
 </script>
 

@@ -8,8 +8,13 @@ const notesStore = useNotesStore()
 const note = ref()
 
 const loadNote = () => {
-  // TODO: 4. Lade die richtige Notiz basierend auf der ID, welche über den Router übergeben wird
-  note.value = { ...notesStore.getNoteById(0) }
+  // TODO: 5. Lade die richtige Notiz basierend auf der ID, welche über den Router übergeben wird
+  note.value = { 
+    id: 1,
+    title: "Test",
+    body: "Test",
+    updatedAt: new Date()
+   }
 }
 
 const updateNote = () => {
@@ -21,10 +26,6 @@ const deleteNote = () => {
 }
 
 notesStore.$subscribe(() => {
-  loadNote()
-})
-
-watch(route, () => {
   loadNote()
 })
 
