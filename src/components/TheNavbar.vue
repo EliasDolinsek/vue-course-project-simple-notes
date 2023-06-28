@@ -18,9 +18,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
+            <!--TODO: 2. Ersetze div durch router-link-->
             <div class="nav-link">Home</div>
           </li>
           <li class="nav-item">
+            <!--TODO: 3. Ersetze div durch router-link-->
             <div class="nav-link">Notes</div>
           </li>
         </ul>
