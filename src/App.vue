@@ -4,8 +4,7 @@ import TheNavbar from './components/TheNavbar.vue'
 
 <template>
   <TheNavbar />
-  <!--TODO: 1. Ersete div durch router-view-->
-  <div class="todo-box">Insert Router View</div>
+  <router-view />
 </template>
 
 <style>
