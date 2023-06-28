@@ -18,10 +18,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <router-link class="nav-link" to="/">Home</router-link>
+            <div class="nav-link">Home</div>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/notes">Notes</router-link>
+            <div class="nav-link">Notes</div>
           </li>
         </ul>
       </div>

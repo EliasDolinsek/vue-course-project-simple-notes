@@ -1,17 +1,14 @@
 <script setup>
 import moment from 'moment'
-import { useRoute, useRouter } from 'vue-router'
 import { useNotesStore } from '@/store/notes'
 import { onMounted, ref, watch } from 'vue'
 
-const route = useRoute()
-const router = useRouter()
 const notesStore = useNotesStore()
 
 const note = ref()
 
 const loadNote = () => {
-  note.value = { ...notesStore.getNoteById(route.params.id) }
+  note.value = { ...notesStore.getNoteById(0) }
 }
 
 const updateNote = () => {
@@ -19,7 +16,6 @@ const updateNote = () => {
 }
 
 const deleteNote = () => {
-  router.replace({name: "notes"})
   notesStore.deleteNote(note.id)
 }
 

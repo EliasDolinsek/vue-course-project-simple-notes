@@ -6,6 +6,6 @@ import IconHello from '@/components/icons/IconHello.vue'
   <div class="d-flex flex-column align-items-center">
     <IconHello />
     <h3 class="mt-3">Welcome to Simple Notes</h3>
-    <router-link to="/notes">SHOW NOTES</router-link>
+    <div>SHOW NOTES</div>
   </div>
 </template>

@@ -1,24 +1,14 @@
 <script setup>
 import moment from 'moment'
-import { useRouter } from 'vue-router'
 import { useNotesStore } from '../store/notes'
 
-const router = useRouter()
 const notesStore = useNotesStore()
 
 const handleClick = (id) => {
-  router.push({
-    name: 'notes/edit',
-    params: { id }
-  })
 }
 
 const addNewNote = () => {
   const id = notesStore.addNote('New Note', '')
-  router.push({
-    name: 'notes/edit',
-    params: { id }
-  })
 }
 </script>
 

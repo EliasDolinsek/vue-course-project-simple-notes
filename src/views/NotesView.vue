@@ -9,7 +9,7 @@ import NotesOverview from '../components/NotesOverview.vue';
         <NotesOverview />
       </div>
       <div class="col-6">
-        <router-view />
+        <div class="todo-box">Insert Router View</div>
       </div>
     </div>
   </div>
