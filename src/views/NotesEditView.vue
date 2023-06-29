@@ -2,19 +2,17 @@
 import moment from 'moment'
 import { useNotesStore } from '@/store/notes'
 import { onMounted, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
 const notesStore = useNotesStore()
+const route = useRoute()
 
 const note = ref()
 
 const loadNote = () => {
-  // TODO: 4. Lade die richtige Notiz aus dem Notes-Store
-  note.value = { 
-    id: 1,
-    title: "Test",
-    body: "Test",
-    updatedAt: new Date()
-   }
+  note.value = {
+    ...notesStore.getNoteById(route.params.id)
+  }
 }
 
 const updateNote = () => {
@@ -33,7 +31,9 @@ onMounted(() => {
   loadNote()
 })
 
-//TODO: 5. Reagiere auf Änderungen der Params
+watch(route, () => {
+  loadNote()
+})
 </script>
 
 <template>
