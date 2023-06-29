@@ -23,7 +23,7 @@ const updateNote = () => {
 
 const deleteNote = () => {
   notesStore.deleteNote(note.id)
-  // TODO: 7. Gehe zu /notes zurück, wenn die Notiz gelöscht wurde
+  // TODO: 7. Gehe zu "/notes" zurück, wenn die Notiz gelöscht wurde
 }
 
 notesStore.$subscribe(() => {
