@@ -8,7 +8,6 @@ const notesStore = useNotesStore()
 const note = ref()
 
 const loadNote = () => {
-  // TODO: 5. Lade die richtige Notiz basierend auf der ID, welche über den Router übergeben wird
   note.value = { 
     id: 1,
     title: "Test",
