@@ -16,6 +16,7 @@ const router = createRouter({
       name: 'notes',
       component: NotesView,
       children: [
+        // TODO: 1. Ersetze 'edit' durch eine dynamische ID
         {
           path: 'edit',
           name: 'notes/edit',

@@ -8,6 +8,7 @@ const notesStore = useNotesStore()
 const note = ref()
 
 const loadNote = () => {
+  // TODO: 4. Lade die richtige Notiz aus dem Notes-Store
   note.value = { 
     id: 1,
     title: "Test",
@@ -31,6 +32,8 @@ notesStore.$subscribe(() => {
 onMounted(() => {
   loadNote()
 })
+
+//TODO: 5. Reagiere auf Änderungen der Params
 </script>
 
 <template>

@@ -5,10 +5,12 @@ import { useNotesStore } from '../store/notes'
 const notesStore = useNotesStore()
 
 const handleClick = (id) => {
+  // TODO: 3. Öffne den NotesEditView wenn eine Notiz ausgewählt wird 
 }
 
 const addNewNote = () => {
   const id = notesStore.addNote('New Note', '')
+  // TODO: 2. Öffne den NotesEditView wenn eine neue Notiz erstellt wird
 }
 </script>
 
